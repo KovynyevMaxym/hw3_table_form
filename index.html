@@ -67,18 +67,111 @@
                 </table>
             </td>
             <td>
-                <div border="1px" type="aline"> 
-                    <ul style="list-style-type:square"> 
+                <table>
+                <td> <div border="1px"> 
+                    <ul> 
 	                    <li>Tea</li> 
 	                    <li>Cofee</li>
                     </ul>
+                    </td>
+                    <td>
+                    <ol type="a"> 
+	                    <li>Tea</li> 
+	                    <li>Cofee</li>
+                    </ol>
+                    </td>
                 </div>
+                </table>
             </td>
+            
           </tr>
       </table>       
     <br><br><br><br><br>
     <!--FORMS-->
-    
+        <!-- <form action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
+enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+.
+form elements
+.
+</form> -->
+        
+        <form>
+          <input type="radio" name="gender" value="male" checked> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other
+        </form> <hr> 
+        <form action="">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male"><br>
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female"><br>
+          <label for="other">Other</label>
+          <input type="radio" name="gender" id="other" value="other"><br><br>
+          <input type="submit" value="Submit">
+        </form> <hr> 
+        <form action="">
+          <fieldset>
+            <legend>Insert Name and Surname:</legend>
+            First name:<br>
+            <input type="text" name="surname" value="Mickey" ><br>
+            Last name:<br>
+            <input type="text" name="name" required><br><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form> <hr> 
+        <form action="">
+          <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi" selected>Audi</option>
+          </select><br> 
+          <textarea autofocus rows="4" cols="5" name="message">Description:
+          </textarea><br>
+          <textarea disabled>You don`t remove this text
+          </textarea> <br>
+          <textarea readonly>You don`t remove this text
+          </textarea><br>
+          <textarea placeholder="You can remove text"></textarea>
+          <input type="submit" value="Submit">
+          <button type="button" onclick="alert('Are you sure')">Send</button>
+        </form> <hr>
+        <form action="">
+          <input list="browsers" name="browser">
+          <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist> <br>
+          <input type="submit">
+        </form> <hr> 
+        <!--HTML5 <keygen> Element What is it?????? -->
+        <form action="">
+          Username: <input type="text" name="user">
+          <br><br>
+          Encryption: <keygen name="security">
+          <br><br>
+          <input type="submit">
+        </form> <hr>
+        <form action=""
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          0
+          <input type="range" id="a" name="a" value="50">
+          100 +
+          <input type="number" id="b" name="b" value="50">
+          =
+          <output name="x" for="a b"></output>
+          <br><br>
+          <input type="submit">
+        </form> <hr> 
+        <form action="">
+            <label for="car">Car Plate Number:</label>
+            <input id="car" type="text" required pattern="[A-Z]{2}[0-9]{6}[A-Z]{2}" placeholder="Sample: AA1234BB">
+            <input type="submit" value="Submit"> <br>
+            
+        </form> <hr>
     
     </body>
 </html>
